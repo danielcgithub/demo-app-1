@@ -1,0 +1,9 @@
+ignore:
+  cves:
+    'CVE-2022-24785':
+      reason: tough cookie issue-moment
+exclude:
+  paths:
+    - packages/app/package-lock.json
+    - package-lock.json
+

@@ -1,6 +1,7 @@
 import express from "express";
-
+import helmet from "helmet";
 const app = express();
+app.use(helmet());
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
@@ -25,5 +26,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(3000, () => {
-  console.log("Server running on port 3000");
+  
 });
